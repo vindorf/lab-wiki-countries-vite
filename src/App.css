@@ -2,3 +2,13 @@
   margin: 0 auto;
   text-align: center;
 }
+.App {
+  text-align: center;
+}
+.card{
+  border: solid 1px black;
+  padding: 1em;
+  margin:auto;
+  margin-bottom: 30px;
+  width: 60%;
+}
