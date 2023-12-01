@@ -14,7 +14,7 @@ function CountryDetails() {
     const apiURL = "https://ih-countries-api.herokuapp.com/countries/";
     axios.get(apiURL + alpha3Code).then((res) => setDetails(res.data));
     setData(false);
-  },[details.alpha3Code]);
+  },[alpha3Code]);
 
   return (
     <div>
@@ -30,7 +30,7 @@ function CountryDetails() {
           {details.borders && details.borders.length > 0 ? (
             details.borders.map((e) => {
               return(
-                <p>
+                <p key={e}>
                      <Link to={`/${e}`}>{e} </Link>
                 </p>
               ) 

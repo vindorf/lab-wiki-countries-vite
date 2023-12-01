@@ -17,6 +17,7 @@ function HomePage(props) {
         return (
           <div key={e._id} className="card">
             <h2>
+              <img src={`https://flagpedia.net/data/flags/icon/72x54/${e.alpha2Code.toLowerCase()}.png`} alt="" />
               <Link to={`/${e.alpha3Code}`}>{e.name.common}</Link>
             </h2>
             <p>{e.alpha3Code} </p>
